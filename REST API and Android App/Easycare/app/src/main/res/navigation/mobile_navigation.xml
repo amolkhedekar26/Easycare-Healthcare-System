@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.easycare.Fragments.MyHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/original_fragment_home_" />
+
+    <fragment
+        android:id="@+id/navigation_doctor"
+        android:name="com.example.easycare.Fragments.DoctorFragment"
+        android:label="Doctor"
+        tools:layout="@layout/fragment_doctor" />
+
+    <fragment
+        android:id="@+id/navigation_hospital"
+        android:name="com.example.easycare.Fragments.HospitalFragment"
+        android:label="Hospital"
+        tools:layout="@layout/fragment_hospital" />
+    <fragment
+        android:id="@+id/navigation_consult"
+        android:name="com.example.easycare.Fragments.ConsultDoctorFragment"
+        android:label="Consult"
+        tools:layout="@layout/fragment_consult_doctor" />
+    <fragment
+        android:id="@+id/navigation_medicine"
+        android:name="com.example.easycare.Fragments.MedicineFragment"
+        android:label="Medicine"
+        tools:layout="@layout/fragment_medicine" />
+</navigation>

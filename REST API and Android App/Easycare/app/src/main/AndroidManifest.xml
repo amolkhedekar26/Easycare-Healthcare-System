@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.easycare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".NewMessageWindow"></activity>
+        <activity android:name=".MedicineList" />
+        <activity android:name=".MyBottomNavigation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Authentication.email_verify_success_activity" />
+        <activity android:name=".Authentication.reset_success" />
+        <activity android:name=".Fragments.Chat" />
+        <activity android:name=".Authentication.profile_activity" />
+        <activity android:name=".Authentication.reset_password">
+            <tools:validation testUrl="http://192.168.43.154:8000/reset_password/" />
+
+            <intent-filter android:scheme="http">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="192.168.43.154"
+                    android:pathPrefix="/reset_password/"
+                    android:port="8000"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Authentication.Forgot_password" />
+        <activity android:name=".modalsheet" />
+        <activity android:name=".Extra.practice" />
+        <activity android:name=".Authentication.signup" />
+        <activity android:name=".Authentication.login" />
+        <activity android:name=".Extra.doctor_home" />
+        <activity android:name=".home" />
+    </application>
+
+</manifest>

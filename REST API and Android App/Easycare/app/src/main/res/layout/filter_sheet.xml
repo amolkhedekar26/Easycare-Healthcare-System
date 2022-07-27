@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_filter">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:text="------------\nChoose Filter">
+
+        </TextView>
+    </LinearLayout>
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flChildSpacing="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linear_filter"
+            app:flRowSpacing="10dp"
+
+            >
+
+        </com.nex3z.flowlayout.FlowLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/reset_filter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Reset"
+            style="@style/Theme.AppCompat"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="left"
+            android:backgroundTint="@color/colorNewGray"
+            android:drawableLeft="@drawable/ic_clear_black_24dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/button_outline"
+            android:elevation="0dp"
+            android:layout_weight="1"
+            android:textSize="20dp">
+
+        </Button>
+        <Button
+            android:id="@+id/apply_filter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Apply"
+            style="@style/Theme.AppCompat"
+            android:elevation="0dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_check_black_24dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:background="@drawable/filter_button"
+            android:backgroundTint="@color/colorMediumBlue"
+            android:layout_gravity="right"
+            android:textSize="20dp">
+
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

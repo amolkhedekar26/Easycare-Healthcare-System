@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".Fragments.MyHomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/rectangle_outline"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:minHeight="200dp"
+                    app:cardBackgroundColor="@color/colorItem10"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/banner">
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/hospitalcard"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/mtrl_card_spacing"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:minHeight="200dp"
+                    app:cardBackgroundColor="@color/colorItem12"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/hospitalcard" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="130dp"
+                        android:text="Hospitals"
+                        android:textColor="@color/colorItem11"
+                        android:textSize="24sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+
+                    android:clickable="true"
+                    android:minHeight="200dp"
+                    app:cardBackgroundColor="@color/colorItem6"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="17dp"
+                        app:srcCompat="@drawable/loginback" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="130dp"
+                        android:text="Doctors"
+                        android:textColor="@color/colorItem5"
+                        android:textSize="24sp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/floating"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:minHeight="200dp"
+                    app:cardBackgroundColor="@color/colorItem10"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="22dp"
+                        app:srcCompat="@drawable/onlineconsult" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="250dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Consult"
+                        android:textColor="@color/colorItem9"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="250dp"
+                        android:layout_marginTop="100dp"
+                        android:text="Online"
+                        android:textColor="@color/colorItem9"
+                        android:textSize="24sp" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/mtrl_card_spacing"
+                    android:clickable="true"
+                    android:minHeight="200dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorSkyBlue"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/tabletcard2" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="130dp"
+                        android:text="Medicines"
+                        android:textColor="@color/colorItem1"
+                        android:textSize="24sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+
+                    android:clickable="true"
+                    android:minHeight="200dp"
+                    app:cardBackgroundColor="@color/colorRipple"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/appointment" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="130dp"
+                        android:text="Appointment"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/rectangle_outline5">
+
+
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Liked Our App ?"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/feedbackicon" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle_outline3"
+                    android:text="Give Feedback"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/mtrl_card_spacing"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:minHeight="200dp"
+                    app:cardBackgroundColor="@color/colorItem12"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:minHeight="200dp"
+                    app:cardBackgroundColor="@color/colorItem6"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
